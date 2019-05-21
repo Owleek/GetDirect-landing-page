@@ -1,0 +1,36 @@
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 0px 25px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    background: none;
+    font-family: BlissPro, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+
+    img {
+        vertical-align: middle;
+    }
+
+    &:hover {
+        background: white;
+        color: black;
+    }
+
+    &:active {
+        border-color: darken(white, 10%);
+        background: lighten(black, 10%)
+    };
+
+    &--green {
+        border-color: green;
+        color: green
+    }
+}

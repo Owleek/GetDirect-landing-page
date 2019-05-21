@@ -1,0 +1,26 @@
+@mixin respond($device) {
+
+    @if $device == landscape {
+        @media only screen and (max-width: 1239px) {
+            @content; // 1024 - 1239
+        }
+    };
+
+    @if $device == portrait {
+        @media only screen and (max-width: 1023px) {
+            @content; // 768 - 1023
+        }
+    };
+
+    @if $device == small {
+        @media only screen and (max-width: 767px) {
+            @content; // 568 - 767
+        }
+    };
+
+    @if $device == extraSmall {
+        @media only screen and (max-width: 567px) {
+            @content; // 320 - 567
+        }
+    };
+}

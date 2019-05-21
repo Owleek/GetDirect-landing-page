@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "default";
+
+body {
+    background: pink;
+    display: flex;
+    padding: 60px;
+    color: red;
+
+    @include respond(landscape) {
+        background: green;
+    }
+
+    @include respond(portrait) {
+        background: blue;
+    }
+
+    @include respond(small) {
+        background: yellow;
+    }
+
+    @include respond(extraSmall) {
+        background: gray;
+    }
+}
+
+.wrapper {
+    width: 100%;
+
+    .main {
+        background: turquoise;
+        width: 100%;
+    }
+}
+
+.contt {
+    color: green;
+
+    .main & {
+        color: $purple;
+    }
+}
