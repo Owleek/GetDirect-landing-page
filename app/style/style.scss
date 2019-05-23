@@ -82,29 +82,17 @@ header {
 	}
 }
 
-// .list-questions {
-// 	margin-bottom: 28px;
-// 	a {
-// 		color: #000000;
-// 		text-decoration: none;
-// 		border-bottom: 1px solid #000000; 
-// 	}
-// 	.list-item {
-// 		margin-bottom: 14px;
-// 	}
-// }
+.photoGalleryComponent {
+	.wrapper {
+		max-width: 1080px;
+	}
+}
 
-// .photo-gallery-wrapper {
-// 	max-width: 1080px;
-// 	margin: 0px auto;
-// 	padding: 18px 0px;
-// }
-
-// .photo-gallery-module {
-// 	display: flex;
-// 	justify-content: space-between;
-// 	margin-bottom: 18px;
-// }
+.photogalleryModule {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
 
 // .oportunities-component {
 // 	display: flex;
