@@ -1,36 +1,108 @@
+* {
+	outline: none;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 200px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.commonWrapper{
+    max-width: 1240px;
+    margin: 0px auto;
+}
+
+.wrapper {
+    max-width: 1190px;
+    margin: 0px auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
 .button {
-    position: relative;
-    display: inline-block;
-    padding: 0px 25px;
-    height: 40px;
-    line-height: 38px;
-    border: 1px solid gray;
-    border-radius: 2px;
-    background: none;
-    font-family: BlissPro, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: normal;
+	padding: 10px;
+	border-radius: 5px;
+	background: #FFFFFF;
+	border: 2px solid #E7E7E7;
     text-align: center;
-    text-decoration: none;
     cursor: pointer;
     white-space: nowrap;
+}
 
-    img {
-        vertical-align: middle;
+.field {
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    span {
+        margin-left: 15px;
     }
+}
 
-    &:hover {
-        background: white;
-        color: black;
-    }
+.contour {
+	border-left: 1px solid #F0F0F0;
+	border-right: 1px solid #F0F0F0;
+	border-bottom: 1px solid #F0F0F0;
+}
 
-    &:active {
-        border-color: darken(white, 10%);
-        background: lighten(black, 10%)
-    };
+.contour-tops {
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+}
 
-    &--green {
-        border-color: green;
-        color: green
-    }
+.contour-sides {
+	border-left: 1px solid #F0F0F0;
+	border-right: 1px solid #F0F0F0;
+}
+
+.heading {
+	padding: 14px 0px 14px 25px;
+	color: #000000;
+	font-size: 20px;
+	font-weight: normal;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.headline {
+	margin: 0px 0px 20px 25px;
+	font-weight: normal;
+	color: #555555;
 }
