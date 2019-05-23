@@ -31,14 +31,6 @@ img {
     margin: 0px auto;
 }
 
-.flex {
-    display: flex;
-}
-
-.inline-flex {
-    display: inline-flex;
-}
-
 .button {
     line-height: 18px;
     font-size: 18px;
@@ -83,12 +75,12 @@ img {
 	border-bottom: 1px solid #F0F0F0;
 }
 
-.contour-tops {
+.contourTops {
     border-top: 1px solid #F0F0F0;
     border-bottom: 1px solid #F0F0F0;
 }
 
-.contour-sides {
+.contourSides {
 	border-left: 1px solid #F0F0F0;
 	border-right: 1px solid #F0F0F0;
 }
