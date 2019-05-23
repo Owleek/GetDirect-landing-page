@@ -21,6 +21,11 @@ img {
     vertical-align: middle;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .commonWrapper{
     max-width: 1240px;
     margin: 0px auto;
@@ -45,9 +50,10 @@ img {
 }
 
 .field {
+    padding: 14px;
+    border-radius: 5px;
     background: #FFFFFF;
     border: 1px solid #E7E7E7;
-    border-radius: 5px;
 }
 
 .block {
@@ -86,6 +92,7 @@ img {
 }
 
 .heading {
+    margin: 0px;
 	padding: 14px 0px 14px 25px;
 	color: #000000;
 	font-size: 20px;
@@ -93,8 +100,22 @@ img {
 	border-bottom: 1px solid #F0F0F0;
 }
 
-.headline {
-	margin: 0px 0px 20px 25px;
+.title {
+    margin: 0px;
+    padding: 16px 0px 16px 25px;
 	font-weight: normal;
-	color: #555555;
+    color: #555555;
+    img,
+    span {
+        vertical-align: middle;
+    }
+    span {
+        margin-left: 10px;
+    }
+}
+
+.info {
+    .inner {
+        margin-left: 60px;
+    }
 }

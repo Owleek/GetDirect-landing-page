@@ -94,6 +94,51 @@ header {
 	margin-bottom: 18px;
 }
 
+.oportunitiesContent {
+	display: flex;
+	.inner {
+		padding-left: 25px;
+	}
+}
+
+.restriction {
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.personData {
+	max-width: 700px;
+}
+
+.photoСarouselModule {
+	max-width: 940px;
+	margin: 0px auto;
+}
+
+.blockQuote {
+	max-width: 100%;
+}
+
+.faded {
+	display: block;
+	color: gray;
+}
+
+.commentSection {
+	.wrapper {
+		max-width: 1020px;
+	}
+}
+
+.commentBlock {
+	max-width: 500px;
+}
+
+.genSection {
+	.wrapper {
+		max-width: 715px;
+	}
+}
 // .oportunities-component {
 // 	display: flex;
 // 	border-left: 1px solid #F0F0F0;
