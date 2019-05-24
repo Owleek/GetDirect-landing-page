@@ -153,8 +153,6 @@ header {
 }
 
 .tabsComponent dt {
-	float: left;
-	height: 45px;
 	position: relative;
 	margin: 0px 1px 0px 0px;
 	padding: 16px 24px 0px 24px;
@@ -169,11 +167,9 @@ header {
 }
 
 .tabsComponent dd {
-	float: right;
-	width: 100%;
+
 	display: none;
 	border: 1px solid #c4c4c4;
-	margin: 44px 0px 0px -100%;
 	padding: 20px 20px 20px 20px;
 }
 
