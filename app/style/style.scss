@@ -27,10 +27,6 @@ header {
 
 .headerMenu {
 	font-size: 17px;
-	a {
-		text-decoration: none;
-		border-bottom: 1px solid #FFFFFF;
-	}
 }
 
 .profileComponent {
@@ -54,8 +50,6 @@ header {
 		color: #0173C1;
 		margin-left: 8px;
 		vertical-align: middle;
-		text-decoration: none;
-		border-bottom: 1px solid #0173C1;
 	}
 }
 
@@ -92,6 +86,11 @@ header {
 	p {
 		margin: 24px 0px 18px 0px;
 	}
+	button {
+		border: 0px;
+		font-size: 20px;
+		color: #FFFFFF;
+	}
 }
 
 .request {
@@ -115,6 +114,7 @@ header {
 
 .countdownСontainer {
 	border: 2px solid #FFBA5C;
+	padding: 12px;
 	p {
 		margin-top: 0px;
 		margin-bottom: 12px;
@@ -126,14 +126,28 @@ header {
 	font-weight: bold;
 }
 
+.contact {
+	margin: 26px 0px 20px 0px;
+	background: #21CE05;
+}
+
+.cancel {
+	margin: 0px 0px 35px 0px;
+	background: #FC2B82;
+}
 .questions {
+	font-size: 18px;
 	display: inline-block;
 	.listItem {
 		justify-content: center;
+		margin-bottom: 18px;
 	}
-	span {
-		cursor: pointer;
-		border-bottom: 1px solid #000000;
+	.listItem:last-child {
+		margin-bottom: 32px;
+	}
+	a {
+		margin-left: 14px;
+		color: #000000;
 	}
 }
 
@@ -150,8 +164,13 @@ header {
 
 .oportunitiesContent {
 	display: flex;
+	font-size: 20px;
 	.inner {
 		padding-left: 25px;
+	}
+	button {
+		font-size: 17px;
+		margin: 5px 15px 20px 0px;
 	}
 }
 
