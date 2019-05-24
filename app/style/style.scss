@@ -12,15 +12,25 @@ header {
 }
 
 .headerContent {
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
+  justify-content: space-between;
 	padding: 9px 0px;
 }
 
 .logoCaption,
 .pageTitle {
 	margin-left: 10px;
+}
+
+.logoCaption {
+	font-size: 22px;
+}
+
+.headerMenu {
+	font-size: 17px;
+	a {
+		text-decoration: none;
+		border-bottom: 1px solid #FFFFFF;
+	}
 }
 
 .profileComponent {
@@ -34,11 +44,18 @@ header {
 }
 
 .social {
+	font-size: 16px;
+	color: #0173C1;
+	padding: 16px 0px;
 	span {
 		display: inline-block;
 	}
 	a {
+		color: #0173C1;
 		margin-left: 8px;
+		vertical-align: middle;
+		text-decoration: none;
+		border-bottom: 1px solid #0173C1;
 	}
 }
 
@@ -46,19 +63,48 @@ header {
 	margin-left: 13px;
 }
 
+.personName {
+	font-size: 24px;
+	margin: 15px 0px 17px 0px;
+}
+
+.personPic {
+	background: #F9F9F9;
+}
+
+.suppBtn {
+	margin-bottom: 23px;
+	padding: 10px 10px;
+	background: #0063B0;
+	font-size: 17px;
+	color: #FFFFFF;
+	border: 0px;
+}
+
 .offerPanel {
+	font-size: 20px;
 	text-align: center;
 	border: 2px solid #FFBA5C;
 	background: rgba(255, 209, 133, 0.5);
 	.wrapper {
 		max-width: 500px;
 	}
+	p {
+		margin: 24px 0px 18px 0px;
+	}
 }
 
 .request {
 	display: inline-block;
-	max-width: 360px;
+	max-width: 355px;
 	text-align: left;
+	p {
+		margin-top: 0px;
+	}
+	li {
+		font-weight: bold;
+		margin-bottom: 23px;
+	}
 }
 
 .short {
@@ -69,6 +115,15 @@ header {
 
 .countdownСontainer {
 	border: 2px solid #FFBA5C;
+	p {
+		margin-top: 0px;
+		margin-bottom: 12px;
+	}
+}
+
+.countdown {
+	font-size: 26px;
+	font-weight: bold;
 }
 
 .questions {
@@ -85,12 +140,11 @@ header {
 .photoGalleryComponent {
 	.wrapper {
 		max-width: 1080px;
+		padding: 18px 0;
 	}
 }
 
 .photogalleryModule {
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 18px;
 }
 
@@ -190,6 +244,22 @@ header {
 		margin-right: 25px;
 		padding: 20px 0px;
 	}
+}
+
+.ery {
+	display: flex;
+}
+
+.ery figure {
+	margin: 0px 20px 0px 0px;
+}
+
+.ery figure:last-child {
+	margin: 0px;
+}
+
+.ery figcaption {
+	display: none;
 }
 // .oportunities-component {
 // 	display: flex;

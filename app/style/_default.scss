@@ -10,7 +10,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     padding-bottom: 200px;
 }
 
@@ -29,6 +29,11 @@ img {
     align-items: flex-start;
 }
 
+.flexCenter {
+    display: flex;
+    align-items: center;
+}
+
 .commonWrapper{
     max-width: 1240px;
     margin: 0px auto;
@@ -43,7 +48,7 @@ img {
     line-height: 18px;
     font-size: 18px;
     font-weight: normal;
-	padding: 10px;
+	padding: 14px;
 	border-radius: 5px;
 	background: #FFFFFF;
 	border: 2px solid #E7E7E7;
