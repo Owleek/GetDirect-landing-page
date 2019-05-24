@@ -1,3 +1,8 @@
 $(document).ready(function() {
-	// do something
+	$('dl.tabsComponent').on('click', 'dt', function() {
+		$(this)
+			.siblings().removeClass('active').end()
+			.next().addClass('active').end()
+			.addClass('active')
+	});				
 });

@@ -139,6 +139,62 @@ header {
 		max-width: 715px;
 	}
 }
+
+.copy {
+	max-width: 700px;
+	display: flex;
+}
+
+
+.tabsComponent:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+
+.tabsComponent dt {
+	float: left;
+	height: 45px;
+	position: relative;
+	margin: 0px 1px 0px 0px;
+	padding: 16px 24px 0px 24px;
+	border: 1px solid #c4c4c4;
+	background: #e7e7e7;
+	cursor: pointer;
+	color: #004987;
+}
+
+.tabsComponent dt:hover {
+	color: #000;
+}
+
+.tabsComponent dd {
+	float: right;
+	width: 100%;
+	display: none;
+	border: 1px solid #c4c4c4;
+	margin: 44px 0px 0px -100%;
+	padding: 20px 20px 20px 20px;
+}
+
+.tabsComponent dt.active {
+	border-color: #c4c4c4;
+	border-bottom: 0px;
+	background: #ffffff;
+	color: #000;
+}
+
+.tabsComponent dd.active {
+	display: block;
+}
+
+.application {
+	.inner {
+		margin-left: 25px;
+		margin-right: 25px;
+		padding: 20px 0px;
+	}
+}
 // .oportunities-component {
 // 	display: flex;
 // 	border-left: 1px solid #F0F0F0;

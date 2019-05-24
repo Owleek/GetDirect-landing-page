@@ -26,6 +26,11 @@ img {
     justify-content: space-between;
 }
 
+.flexStart {
+    display: flex;
+    align-items: flex-start;
+}
+
 .commonWrapper{
     max-width: 1240px;
     margin: 0px auto;
@@ -75,6 +80,10 @@ img {
     }
 }
 
+.border {
+    border: 1px solid #F0F0F0;
+}
+
 .contour {
 	border-left: 1px solid #F0F0F0;
 	border-right: 1px solid #F0F0F0;
@@ -117,5 +126,18 @@ img {
 .info {
     .inner {
         margin-left: 60px;
+    }
+}
+
+.post {
+    .inner {
+        margin-left: 25px;
+    }
+}
+
+.input {
+    max-width: 500px;
+    input {
+        width: 100%;
     }
 }
