@@ -42,7 +42,7 @@ header {
 .social {
 	font-size: 16px;
 	color: #0173C1;
-	padding: 16px 0px;
+	margin: 16px 0px;
 	span {
 		display: inline-block;
 	}
@@ -165,12 +165,13 @@ header {
 .oportunitiesContent {
 	display: flex;
 	font-size: 20px;
+	padding-bottom: 20px;
 	.inner {
 		padding-left: 25px;
 	}
 	button {
 		font-size: 17px;
-		margin: 5px 15px 20px 0px;
+		margin-right: 15px;
 	}
 }
 
@@ -218,6 +219,7 @@ header {
 	padding: 0px 16px;
 	max-width: 700px;
 	margin-bottom: 28px;
+	background: #FAFAFA;
 	p {
 		margin: 13px 0px;
 	}
@@ -239,16 +241,10 @@ header {
 	max-width: 100%;
 	margin: 18px 0px 22px 0px;
 	padding: 16px 14px;
-	button {
-		padding: 9px 11px;
-	}
 }
 
 .serviceComponent {
-	button {
-		padding: 9px 11px;
-		margin-bottom: 27px;
-	}
+	padding: 0px 0px 20px 0px;
 }
 
 .service {
@@ -266,6 +262,8 @@ header {
 }
 
 .commentSection {
+	padding-bottom: 20px;
+
 	.wrapper {
 		max-width: 1020px;
 	}
@@ -274,6 +272,12 @@ header {
 .commentBlock {
 	max-width: 500px;
 	margin-right: 20px;
+	margin-bottom: 20px;
+	background: rgba(255,209,133,0.25);
+}
+
+.commentBlock p {
+	color: #555555;
 }
 
 .genSection {
@@ -375,7 +379,10 @@ header {
 }
 
 footer {
+	padding: 20px 0px 5px;
 	background: #555555;
+	text-align: center;
+	font-size: 17px;
 	color: #FFFFFF;
 	a {
 		color: #FFFFFF;
@@ -383,11 +390,13 @@ footer {
 }
 
 .copyrights {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0px auto;
-	max-width: 700px;
+	display: block;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+}
+
+.copyrights li {
+	margin: 0px 0px 12px 0px;
 }
 
 body {
