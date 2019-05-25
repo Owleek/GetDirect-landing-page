@@ -287,6 +287,30 @@ header {
 	display: flex;
 }
 
+.commonTitle {
+	font-size: 22px;
+	margin: 22px 0px 0px 0px;
+}
+
+.postContent {
+	color: #555555;
+	padding-right: 15px;
+	p {
+		margin: 13px 0px;
+	}
+	input {
+		background: #FAFAFA;
+		border: 1px solid #E7E7E7;
+		border-radius: 2px 0px 0px 2px;
+	}
+	button {
+		background: #FFFFFF;
+		border-top: 1px solid #E7E7E7;
+		border-right: 1px solid #E7E7E7;
+		border-bottom: 1px solid #E7E7E7;
+		border-radius: 0px 2px 2px 0px;
+	}
+}
 
 .tabsComponent:after {
 	clear: both;
