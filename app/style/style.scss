@@ -179,8 +179,55 @@ header {
 	display: inline-block;
 }
 
+.info {
+	color: #555555;
+	.title {
+		font-size: 19px;
+	}
+	.inner {
+			margin-left: 60px;
+	}
+	button {
+		font-size: 17px;
+		color: #0173C1;
+		background: rgba(1, 115, 193, 0.15);
+		border: 0px;
+		padding: 11px 14px;
+		margin: 0px 24px 24px 0px;
+		img {
+			margin-right: 18px;
+		}
+		span {
+			vertical-align: middle;
+		}
+	}
+}
+
+.title {
+	margin: 0px;
+	color: #555555;
+	font-weight: normal;
+	padding: 16px 0px 16px 25px;
+	span {
+		margin-left: 10px;
+		vertical-align: middle;
+	}
+}
+
 .personData {
+	padding: 0px 16px;
 	max-width: 700px;
+	margin-bottom: 28px;
+	p {
+		margin: 13px 0px;
+	}
+}
+
+.photoСarouselComponent {
+	.title {
+		font-size: 20px;
+		padding-bottom: 22px;
+	}
 }
 
 .photoСarouselModule {
@@ -190,11 +237,32 @@ header {
 
 .blockQuote {
 	max-width: 100%;
+	margin: 18px 0px 22px 0px;
+	padding: 16px 14px;
+	button {
+		padding: 9px 11px;
+	}
+}
+
+.serviceComponent {
+	button {
+		padding: 9px 11px;
+		margin-bottom: 27px;
+	}
+}
+
+.service {
+	font-size: 20px;
+	margin: 25px 0px;
+	color: #000000;
+	li {
+		margin-bottom: 17px;
+	}
 }
 
 .faded {
-	display: block;
-	color: gray;
+	color: #999999;
+	font-size: 17px;
 }
 
 .commentSection {
@@ -205,6 +273,7 @@ header {
 
 .commentBlock {
 	max-width: 500px;
+	margin-right: 20px;
 }
 
 .genSection {
@@ -280,86 +349,6 @@ header {
 .ery figcaption {
 	display: none;
 }
-// .oportunities-component {
-// 	display: flex;
-// 	border-left: 1px solid #F0F0F0;
-// 	border-right: 1px solid #F0F0F0;
-// 	border-bottom: 1px solid #F0F0F0;
-// 	.oportunities-icon {
-// 		display: inline-block;
-// 	}
-// 	.oportunities-icon,
-// 	.oportunities-info {
-// 		margin: 17px 0px 0px 25px;
-// 	}
-
-// 	.oportunities-info {
-// 		font-size: 20px;
-// 	}
-
-// 	p {
-// 		margin: 0px 0px 18px 0px;
-// 	}
-
-// 	.btn-actions-wrapper {
-// 		span:not(:first-child) {
-// 			margin-left: 18px;
-// 		}
-// 	}
-// }
-
-// .pofile-info-section {
-// 	color: #555555;
-// }
-
-
-// .pofile-info-wrapper {
-// 	margin-left: 60px;
-// }
-
-// .profile-info {
-// 	max-width: 700px;
-// 	padding: 16px;
-// 	border-radius: 3px;
-// 	background: #FAFAFA;
-// 	border: 1px solid #E7E7E7;
-// 	margin-bottom: 20px;
-// 	p {
-// 		margin: 0px 0px 18px 0px;
-// 	}
-
-// 	p:last-child {
-// 		margin: 0;
-// 	}
-// }
-
-// .photo-carousel-component {
-// 	padding-top: 20px;
-// }
-
-// .photo-carousel {
-// 	max-width: 940px;
-// 	margin: 0px auto 20px auto;
-// 	display: flex;
-// 	justify-content: space-between;
-// }
-
-// .blockquote {
-// 	max-width: 1188px;
-// 	margin: 0 auto;
-// 	padding: 16px 0px 16px 14px;
-// 	background: #FAFAFA;
-// 	border: 1px solid #E7E7E7;
-// 	border-radius: 5px;
-// 	p {
-// 		max-width: 1035px;
-// 	}
-// }
-
-// .services-section {
-// 	padding: 0px 0px 25px 25px;
-// }
-
 
 footer {
 	background: #555555;

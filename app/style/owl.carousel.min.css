@@ -10,6 +10,7 @@
 
 .owl-carousel .owl-nav {
 	margin-top: 20px !important;
+	margin-bottom: 30px !important;
 }
 
 .owl-carousel .owl-nav button:hover {
@@ -45,8 +46,8 @@
 .owl-carousel .owl-nav button.owl-next:after {
 	width: 32px;
 	height: 32px;
-	top: 12px;
-	left: 59px;
+	top: 10px;
+	left: 57px;
 	background: url("../images/leftArrow.svg") 50% 50% no-repeat;
 	position: absolute;
 	content: "";
@@ -54,4 +55,6 @@
 
 .owl-carousel .owl-nav button.owl-next:after {
 	background: url("../images/rightArrow.svg") 50% 50% no-repeat;
+	left: 58px;
+
 }
