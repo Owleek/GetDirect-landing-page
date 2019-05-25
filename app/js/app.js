@@ -125,9 +125,10 @@ $(function(){
         itemsCustom: [
         [0, 1],
         [450, 2],
-        [1000, 3],
+        [1000, 3]
       ],
-        responsiveRefreshRate: 0
+        responsiveRefreshRate: 0,
+        navigation: true
       },
       pswpOptions = {
         bgOpacity: 0.9,

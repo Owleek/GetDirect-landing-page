@@ -69,3 +69,51 @@
   -ms-transform: translate3d(0,0,0);
 }
 
+
+
+
+
+.owl-carousel .owl-buttons {
+	display: flex;
+	margin-top: 20px !important;
+	margin-bottom: 30px !important;
+	justify-content: center;
+}
+
+.owl-carousel .owl-buttons .owl-next,
+.owl-carousel .owl-buttons .owl-prev {
+	width: 150px;
+	height: 56px;
+	position: relative;
+	background: #FAFAFA; 
+	text-indent: -1000px;
+	} 
+
+.owl-carousel .owl-buttons .owl-prev {
+	border: 2px solid #E7E7E7;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.owl-carousel .owl-buttons .owl-next {
+	border-radius: 0px 5px 5px 0px;
+	border-top: 2px solid #E7E7E7;
+	border-right: 2px solid #E7E7E7;
+	border-bottom: 2px solid #E7E7E7;
+}
+
+.owl-carousel .owl-buttons .owl-prev:before,
+.owl-carousel .owl-buttons .owl-next:after {
+	width: 32px;
+	height: 32px;
+	top: 10px;
+	left: 57px;
+	background: url("../images/leftArrow.svg") 50% 50% no-repeat;
+	position: absolute;
+	content: "";
+}
+
+.owl-carousel .owl-buttons .owl-next:after {
+	background: url("../images/rightArrow.svg") 50% 50% no-repeat;
+	left: 58px;
+
+}
