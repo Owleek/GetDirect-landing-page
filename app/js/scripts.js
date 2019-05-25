@@ -22,6 +22,9 @@ $(document).ready(function() {
 			.next().toggleClass('active').end()
 			.toggleClass('active')
     });
+
+
+    
     var initPhotoSwipeFromDOM = function(gallerySelector) {
         var parseThumbnailElements = function(el) {
             var thumbElements = el.childNodes,
