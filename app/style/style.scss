@@ -232,7 +232,13 @@ header {
 .photoСarouselModule {
 	max-width: 940px;
 	margin: 0px auto;
+	.item {
+		margin: 0px 5px;
+		text-align: center;
+	}
 }
+
+
 
 
 .serviceComponent {

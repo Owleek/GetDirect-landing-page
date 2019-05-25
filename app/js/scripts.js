@@ -1,34 +1,12 @@
 $(document).ready(function() {
 
 
-    console.log('loaded');
-
     $('dl.tabsComponent').on('click', 'dt', function() {
         $(this)
             .toggleClass('active')
             .next('dd').toggleClass('active')
 
     });
-
-
-	$('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:20,
-        dots:false,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1000:{
-                items:3
-            }
-        }
-    });
-
     
     var initPhotoSwipeFromDOM = function(gallerySelector) {
         var parseThumbnailElements = function(el) {
