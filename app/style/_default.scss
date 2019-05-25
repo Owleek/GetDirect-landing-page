@@ -258,6 +258,10 @@ main {
 }
 
 
+.attachments {
+    padding-bottom: 20px;
+}
+
 .overview {
     margin: 0px -1px;
     border: 2px solid #FFBA5C;
@@ -288,19 +292,70 @@ main {
 
 .information {
     padding-left: 60px;
+    .button {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }    
+    .blockOutline {
+        max-width: 700px;
+    }    
 }
-
-.information .button {
-    margin-right: 20px;
-    margin-bottom: 0;
-}
-
-.information .blockOutline {
-    max-width: 700px;
-}
-
 
 .textLeft {
     text-align: left;
 }
+
+
+.textBlock {
+    display: flex;
+    margin: 20px 0;
+    .image {
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .text :first-of-type {
+        margin-top: 0;
+    }
+    .text :last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.highlight {
+    .text {
+        padding: 20px 20px; 
+        align-items: center;
+        background: rgba(255, 177, 64, 0.15);
+        font-size: 20px;
+    }
+}
+
+.appKeyCtrl {
+    display: flex;
+    > span {
+        width: 500px;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid #E7E7E7;
+        background: #FAFAFA;
+        
+        display: flex;
+        align-items: center;
+    }
+    .button {
+        border-left: 0;
+        border-width: 1px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 50px;
+        background: #FFFFFF;
+    }
+}
+
+
+
 

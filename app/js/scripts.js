@@ -1,4 +1,16 @@
 $(document).ready(function() {
+
+
+    console.log('loaded');
+
+    $('dl.tabsComponent').on('click', 'dt', function() {
+        $(this)
+            .toggleClass('active')
+            .next('dd').toggleClass('active')
+
+    });
+
+
 	$('.owl-carousel').owlCarousel({
         loop:true,
         margin:20,
@@ -16,13 +28,6 @@ $(document).ready(function() {
             }
         }
     });
-	$('dl.tabsComponent').on('click', 'dt', function() {
-		$(this)
-
-			.next().toggleClass('active').end()
-			.toggleClass('active')
-    });
-
 
     
     var initPhotoSwipeFromDOM = function(gallerySelector) {

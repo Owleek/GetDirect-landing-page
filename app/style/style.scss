@@ -359,32 +359,57 @@ header {
 	content: '';
 }
 
-.tabsComponent dt {
-	position: relative;
-	margin: 0px 1px 0px 0px;
-	padding: 16px 24px 0px 24px;
-	border: 1px solid #c4c4c4;
-	background: #e7e7e7;
-	cursor: pointer;
-	color: #004987;
+.tabsComponent {
+	margin: 20px 0;
+	border-bottom: 1px solid #E7E7E7;
 }
+
+.tabsComponent dt {
+    margin: 0px;
+	padding: 13px 50px 13px 25px;
+    margin: 0;
+	color: #000000;
+	position: relative;
+	font-size: 20px;
+	font-weight: normal;
+	border: 1px solid #E7E7E7;
+	border-bottom: none;
+    background: #FAFAFA;
+    cursor: pointer;
+}
+
+.tabsComponent dt:before {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	right: 10px; top: 50%;
+	transform: translate(0%, -50%);
+	background: url('../images/accordion-arrow.svg') no-repeat 50% 50%;
+	content: '';
+}
+
 
 .tabsComponent dt:hover {
 	color: #000;
 }
 
 .tabsComponent dd {
-
 	display: none;
-	border: 1px solid #c4c4c4;
+	border: 1px solid #E7E7E7;
+	border-bottom: none;
 	padding: 20px 20px 20px 20px;
+	margin: 0;
 }
 
 .tabsComponent dt.active {
-	border-color: #c4c4c4;
+	
 	border-bottom: 0px;
-	background: #ffffff;
-	color: #000;
+	/*background: #ffffff;*/
+	/*color: #000;*/
+}
+
+.tabsComponent dt.active:before {
+	transform: translate(0%, -50%) rotate(180deg);
 }
 
 .tabsComponent dd.active {
