@@ -189,18 +189,7 @@ header {
 			margin-left: 60px;
 	}
 	button {
-		font-size: 17px;
-		color: #0173C1;
-		background: rgba(1, 115, 193, 0.15);
-		border: 0px;
-		padding: 11px 14px;
 		margin: 0px 24px 24px 0px;
-		img {
-			margin-right: 18px;
-		}
-		span {
-			vertical-align: middle;
-		}
 	}
 }
 
@@ -281,6 +270,7 @@ header {
 }
 
 .genSection {
+	border-top: 1px solid #E7E7E7;
 	.wrapper {
 		max-width: 715px;
 	}

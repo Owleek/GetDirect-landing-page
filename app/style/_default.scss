@@ -68,6 +68,21 @@ a:hover {
     font-size: 18px;
 }
 
+.button.colorBlue {
+    border: none;
+    background: rgba(1, 115, 193, 0.15);
+    color: #0173C1;
+}
+
+.button.iconLeft {
+    img {
+        margin-right: 18px;
+    }
+    span {
+        vertical-align: middle;
+    }
+}
+
 .field {
     padding: 14px;
     border-radius: 5px;
@@ -117,7 +132,8 @@ a:hover {
 	color: #000000;
 	font-size: 20px;
 	font-weight: normal;
-	border-bottom: 1px solid #E7E7E7;
+	border: 1px solid #E7E7E7;
+    border-width: 1px 0px;
     background: #FAFAFA;
 }
 
@@ -137,4 +153,14 @@ a:hover {
 main {
     border: 1px solid #F0F0F0;
 }
+
+
+.blockOutline {
+    margin: 20px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+    background: #FAFAFA;
+}
+
 
