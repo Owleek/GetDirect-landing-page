@@ -6,6 +6,7 @@ header {
 	width: 100%;
 	color: #FFFFFF;
 	background: #2344A4;
+	padding: 0px 20px;
 	a {
 		color: #FFFFFF;
 	}
@@ -57,21 +58,31 @@ header {
 	margin-left: 13px;
 }
 
-.personName {
-	font-size: 24px;
-	margin: 15px 0px 17px 0px;
-}
-
-.personPic {
-	background: #F9F9F9;
+.profile {
+	text-align: center;
+	.userPic {
+		margin: 0px -20px;
+		background: #F9F9F9;
+		border: 1px solid #E7E7E7;
+		border-width: 1px 0;
+	}
+	.userName {
+		font-size: 24px;
+		margin: 15px 0px 17px 0px;
+	}	
+	.userPosition {
+		display: inline-block;
+		padding: 10px 10px;
+		margin-bottom: 20px;
+		background: #0063B0;
+		border-radius: 5px;
+		font-size: 17px;
+		color: #FFFFFF;		
+	}
 }
 
 .suppBtn {
 	margin-bottom: 23px;
-	padding: 10px 10px;
-	background: #0063B0;
-	font-size: 17px;
-	color: #FFFFFF;
 	border: 0px;
 }
 
@@ -112,19 +123,19 @@ header {
 	}
 }
 
-.countdownСontainer {
+.countdown {
 	border: 2px solid #FFBA5C;
+	border-radius: 5px;
+	background: #FFFFFF;
 	padding: 12px;
-	p {
-		margin-top: 0px;
-		margin-bottom: 12px;
-	}
+	.value {
+		display: block;
+		margin-top: 12px;
+		font-weight: bold;
+		font-size: 26px;
+	}	
 }
 
-.countdown {
-	font-size: 26px;
-	font-weight: bold;
-}
 
 .contact {
 	margin: 26px 0px 20px 0px;
@@ -165,20 +176,17 @@ header {
 .oportunitiesContent {
 	display: flex;
 	font-size: 20px;
-	padding-bottom: 20px;
-	.inner {
-		padding-left: 25px;
+	.icon {
+		padding-top: 20px;
+	}		
+	.text {
+		padding-left: 20px;
 	}
-	button {
-		font-size: 17px;
-		margin-right: 15px;
+	.button {
+		margin-right: 20px;
 	}
 }
 
-.restriction {
-	margin-top: 20px;
-	display: inline-block;
-}
 
 .info {
 	color: #555555;
@@ -197,7 +205,7 @@ header {
 	margin: 0px;
 	color: #555555;
 	font-weight: normal;
-	padding: 16px 0px 16px 25px;
+	margin: 16px 0px 16px 20px;
 	span {
 		margin-left: 10px;
 		vertical-align: middle;
@@ -226,14 +234,9 @@ header {
 	margin: 0px auto;
 }
 
-.blockQuote {
-	max-width: 100%;
-	margin: 18px 0px 22px 0px;
-	padding: 16px 14px;
-}
 
 .serviceComponent {
-	padding: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 .service {
@@ -250,24 +253,25 @@ header {
 	font-size: 17px;
 }
 
-.commentSection {
-	padding-bottom: 20px;
 
-	.wrapper {
-		max-width: 1020px;
-	}
+.commentsList {
+	margin: 0px 0px 0px -20px;
 }
 
 .commentBlock {
-	max-width: 500px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	margin: 0px 0px 20px 20px;
+	padding: 20px 20px 20px 20px;
 	background: rgba(255,209,133,0.25);
+}
+
+.commentBlock :last-child {
+	margin-bottom: 0;
 }
 
 .commentBlock p {
 	color: #555555;
 }
+
 
 .genSection {
 	border-top: 1px solid #E7E7E7;
@@ -345,7 +349,7 @@ header {
 }
 
 footer {
-	padding: 20px 0px 5px;
+	padding: 20px 0px 20px;
 	background: #555555;
 	text-align: center;
 	font-size: 17px;
@@ -353,6 +357,10 @@ footer {
 	a {
 		color: #FFFFFF;
 	}
+}
+
+footer p:last-of-type {
+	margin-bottom: 0px;
 }
 
 .copyrights {
@@ -367,18 +375,27 @@ footer {
 
 body {
     @include respond(landscape) {
-        background: green;
+        /*background: green;*/
     }
 
     @include respond(portrait) {
-        background: blue;
+        /*background: blue;*/
     }
 
     @include respond(small) {
-        background: yellow;
+        /*background: yellow;*/
+
+        .commentsList {
+        	margin: 0;
+        	flex-wrap: wrap;
+        	.commentBlock {
+        		margin-left: 0;
+        	}
+        }
+
     }
 
     @include respond(extraSmall) {
-        background: gray;
+        /*background: gray;*/
     }
 }

@@ -52,13 +52,14 @@ a:hover {
     font-size: 17px;
     font-weight: normal;
 	border-radius: 5px;
-	background: #FFFFFF;
+	background: #FAFAFA;
 	border: 2px solid #E7E7E7;
     text-align: center;
-    cursor: pointer;
     white-space: nowrap;
+    cursor: pointer;
 
     padding: 9px 11px;
+    margin-bottom: 20px;
 }
 
 .button.block {
@@ -74,9 +75,25 @@ a:hover {
     color: #0173C1;
 }
 
+.button.colorGreen {
+    border: none;
+    background: #21CE05;
+    color: #FFFFFF;
+}
+
+.button.colorRed {
+    border: none;
+    background: #FC2B82;
+    color: #FFFFFF;
+}
+
+.button.colorWhite {
+    background: #FFFFFF;
+}
+
 .button.iconLeft {
     img {
-        margin-right: 18px;
+        margin-right: 15px;
     }
     span {
         vertical-align: middle;
@@ -100,10 +117,16 @@ a:hover {
 .listItem {
     display: flex;
     align-items: center;
-    span {
-        margin-left: 15px;
+    .ico {
+        margin-right: 15px;
     }
 }
+
+
+.checkList {
+
+}
+
 
 .border {
     border: 1px solid #F0F0F0;
@@ -155,12 +178,129 @@ main {
 }
 
 
+.topBorder {
+    border-top: 1px solid #E7E7E7;
+}
+
 .blockOutline {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 0px;
     padding: 0px 20px 0px 20px;
     border: 1px solid #E7E7E7;
     border-radius: 3px;
     background: #FAFAFA;
 }
 
+
+
+.sectionContent {
+    padding: 0px 20px;
+}
+
+
+
+.blockquote:before {
+    height: 18px;
+    display: block;
+    margin: 20px 0px 0px 0px;
+    background: url('../images/quotes.svg') no-repeat 0 0;
+    content: '';
+}
+
+.block {
+    display: block;
+}
+
+.checkList {
+    display: block;
+    margin: 0px 0px 20px 0px;
+}
+
+.checkList li {
+    position: relative;
+    margin: 0px 0px 17px 0px;
+    padding: 2px 0px 0px 40px;
+}
+
+.checkList li:before {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0px; top: 0px;
+    background: url('../images/check-mark.svg') no-repeat 0 0;
+    content: '';
+}
+
+.checkList .note {
+    display: block;
+    margin-top: 3px;
+}
+
+
+
+.widthLimit {
+    margin: 0 auto;
+}
+
+.widthLimit.w_350 {
+    max-width: 350px;
+}
+
+.widthLimit.w_500 {
+    max-width: 500px;
+}
+
+.widthLimit.w_700 {
+    max-width: 700px;
+}
+
+.widthLimit.w_1020 {
+    max-width: 1020px;
+}
+
+
+.overview {
+    margin: 0px -1px;
+    border: 2px solid #FFBA5C;
+    margin: 0px 0px 20px 0px;
+    background: rgba(255,209,133,0.5);
+    text-align: center;
+    font-size: 20px;
+    .checkList li:before {
+        background-image: url('../images/check-mark-black.svg');
+    }
+    .link {
+        a {
+           color: #000000; 
+        }
+        img {
+            margin-right: 5px;
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+
+
+
+
+
+
+
+.information {
+    padding-left: 60px;
+}
+
+.information .button {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.information .blockOutline {
+    max-width: 700px;
+}
+
+
+.textLeft {
+    text-align: left;
+}
 
