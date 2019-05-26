@@ -236,6 +236,34 @@ main {
 }
 
 
+.qsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+    text-align: left;
+}
+
+.qsList li {
+    position: relative;
+    margin: 0px 0px 17px 0px;
+    padding: 2px 0px 0px 40px;
+}
+
+.qsList li:before {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0px; top: 2px;
+    background: url('../images/help-icon.svg') no-repeat 0 0;
+    content: '';
+}
+
+.qsList li a {
+   color: #000000; 
+}
+
+
 
 .widthLimit {
     margin: 0 auto;
@@ -294,10 +322,10 @@ main {
     padding-left: 60px;
     .button {
         margin-right: 20px;
-        margin-bottom: 0;
     }    
     .blockOutline {
         max-width: 700px;
+        margin-top: 0px;
     }    
 }
 

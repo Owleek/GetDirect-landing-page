@@ -17,6 +17,10 @@ header {
 	padding: 9px 0px;
 }
 
+.logoIcon {
+	flex-shrink: 0;
+}
+
 .logoCaption,
 .pageTitle {
 	margin-left: 10px;
@@ -170,8 +174,18 @@ header {
 }
 
 .photogalleryModule {
-	margin-bottom: 18px;
+	margin-top: -20px;
+	padding: 20px 20px 1px;
+	background: #FAFAFA;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #E7E7E7;
+	.photoswipeGallery {
+		margin-bottom: 20px;
+	}
 }
+
+
+
 
 .oportunitiesContent {
 	display: flex;
@@ -204,11 +218,14 @@ header {
 .title {
 	margin: 0px;
 	color: #555555;
+	position: relative;
+	margin: 16px 20px 16px 20px; 
+	padding-left: 40px;
 	font-weight: normal;
-	margin: 16px 0px 16px 20px;
-	span {
-		margin-left: 10px;
-		vertical-align: middle;
+	.ico {
+		position: absolute;
+		left: 0;
+		top: 0;
 	}
 }
 
@@ -476,16 +493,35 @@ footer p:last-of-type {
 }
 
 body {
+
     @include respond(landscape) {
-        /*background: green;*/
+
     }
 
     @include respond(portrait) {
-        /*background: blue;*/
+
     }
 
     @include respond(small) {
-        /*background: yellow;*/
+
+
+    	.headerMenu a {
+    		width: 32px;
+    		height: 32px;
+    		display: block;
+    		position: relative;
+    		text-indent: -1000px;
+    	}    	
+
+    	.headerMenu a:before {
+    		width: 32px;
+    		height: 32px;
+    		position: absolute;
+    		right: 0;
+    		top: 0;
+    		background: url('../images/ham.svg') no-repeat 50% 50%;
+    		content: '';
+    	}
 
         .commentsList {
         	margin: 0;
@@ -495,9 +531,130 @@ body {
         	}
         }
 
+        .wizard .textBlock {
+        	flex-wrap: wrap;
+			.image {
+				margin: 0 0 20px 0;
+			}
+        }
+
+		.appKeyCtrl {
+		    display: flex;
+		    > span {
+		        width: auto;
+		        span {
+			        word-break: break-all;
+		        }
+		    }
+		}        
+
+		.wizard .textBlock {
+		    .image {
+		        flex-shrink: 1;
+		        margin: 0 0 20px 0;
+		    }
+		}
+
+		.highlight {
+			display: block;
+			.image {
+				margin: 0 -20px 20px -20px;
+				background: #FAFAFA;
+				text-align: center;
+			}
+		}
+
+		.attachments {
+			.photoswipeGallery {
+				display: block;
+				figure {
+					display: inline-block;
+					margin: 0 20px 20px 0;
+				}
+			}
+		}		
+
     }
 
     @include respond(extraSmall) {
-        /*background: gray;*/
+
+    	.pageTitle {
+    		display: none;
+    	}
+
+
+		.qsList {
+		    justify-content: left;
+		}    	
+
+		.oportunitiesContent {
+			display: block;
+			.icon {
+				text-align: center;
+			}		
+			.text {
+				padding-left: 0;
+			}
+			.button {
+				margin-right: 20px;
+			}
+		}
+
+		.textBlock {
+			display: block;
+			.image {
+				margin-bottom: 20px;
+			}
+		}
+
+		.highlight {
+			.text {
+				margin: 0 -20px 20px;
+			}
+		}		
+
+		.appKeyCtrl {
+		    display: block;
+		    > span {
+		        width: auto;
+		    }
+		    .button {
+		        width: 100%;
+		        display: block;
+		        border-radius: 0;
+		        border: 1px solid #E7E7E7;
+		        border-top: 0px;
+		    }
+		}
+
+
+		.photogalleryModule {
+			.photoswipeGallery {
+				display: block;
+				text-align: center;
+				figure {
+					display: block;
+					margin: 0 0px 20px 0;
+				}
+			}
+		}
+
+		.attachments {
+			margin: 0 -20px;
+			border-radius: 0;
+			border-width: 1px 0 0;
+			.photoswipeGallery {
+				text-align: center;
+				figure {
+					display: block;
+					margin: 0 0px 20px 0;
+				}
+			}
+		}		
+
+		.tabsComponent {
+			margin: 20px -21px;
+		}
+
     }
 }
