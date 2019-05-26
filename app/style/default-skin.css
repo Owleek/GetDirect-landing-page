@@ -52,7 +52,11 @@
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
+<<<<<<< HEAD
   background: url(default-skin.png) 0 0 no-repeat;
+=======
+  background: url('../images/default-skin.png') 0 0 no-repeat;
+>>>>>>> windimax
   background-size: 264px 88px;
   width: 44px;
   height: 44px; }
