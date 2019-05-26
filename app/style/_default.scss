@@ -300,6 +300,8 @@ main {
     font-size: 20px;
     .checkList li:before {
         background-image: url('../images/check-mark-black.svg');
+        top: 50%;
+        transform: translateY(-50%);
     }
     .link {
         a {

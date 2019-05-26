@@ -87,6 +87,7 @@
 	position: relative;
 	background: #FAFAFA; 
 	text-indent: -1000px;
+	overflow: hidden;
 	} 
 
 .owl-carousel .owl-buttons .owl-prev {
