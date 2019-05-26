@@ -42,11 +42,6 @@ a:hover {
     margin: 0px auto;
 }
 
-.wrapper {
-    max-width: 1190px;
-    margin: 0px auto;
-}
-
 .button {
     line-height: 17px;
     font-size: 17px;
@@ -100,52 +95,10 @@ a:hover {
     }
 }
 
-.field {
-    padding: 14px;
-    border-radius: 5px;
-    background: #FFFFFF;
-    border: 1px solid #E7E7E7;
-}
-
-
 .list {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.listItem {
-    display: flex;
-    align-items: center;
-    .ico {
-        margin-right: 15px;
-    }
-}
-
-
-.checkList {
-
-}
-
-
-.border {
-    border: 1px solid #F0F0F0;
-}
-
-.contour {
-	border-left: 1px solid #F0F0F0;
-	border-right: 1px solid #F0F0F0;
-	border-bottom: 1px solid #F0F0F0;
-}
-
-.contourTops {
-    border-top: 1px solid #F0F0F0;
-    border-bottom: 1px solid #F0F0F0;
-}
-
-.contourSides {
-	border-left: 1px solid #F0F0F0;
-	border-right: 1px solid #F0F0F0;
 }
 
 .heading {
@@ -160,24 +113,10 @@ a:hover {
     background: #FAFAFA;
 }
 
-.post {
-    .inner {
-        margin-left: 24px;
-    }
-}
-
-.input {
-    max-width: 500px;
-    input {
-        width: 100%;
-    }
-}
-
 main {
     border: 1px solid #F0F0F0;
     background: #ffffff;
 }
-
 
 .topBorder {
     border-top: 1px solid #E7E7E7;
@@ -191,13 +130,9 @@ main {
     background: #FAFAFA;
 }
 
-
-
 .sectionContent {
     padding: 0px 20px;
 }
-
-
 
 .blockquote:before {
     height: 18px;
@@ -205,10 +140,6 @@ main {
     margin: 20px 0px 0px 0px;
     background: url('../images/quotes.svg') no-repeat 0 0;
     content: '';
-}
-
-.block {
-    display: block;
 }
 
 .checkList {
@@ -236,7 +167,6 @@ main {
     margin-top: 3px;
 }
 
-
 .qsList {
     display: flex;
     flex-wrap: wrap;
@@ -251,8 +181,6 @@ main {
 .qsList li a {
    color: #000000; 
 }
-
-
 
 .widthLimit {
     margin: 0 auto;
@@ -273,7 +201,6 @@ main {
 .widthLimit.w_1020 {
     max-width: 1020px;
 }
-
 
 .attachments {
     padding-bottom: 20px;
@@ -303,12 +230,6 @@ main {
     }
 }
 
-
-
-
-
-
-
 .information {
     padding-left: 60px;
     .button {
@@ -323,7 +244,6 @@ main {
 .textLeft {
     text-align: left;
 }
-
 
 .textBlock {
     display: flex;
