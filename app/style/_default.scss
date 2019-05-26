@@ -43,6 +43,7 @@ a:hover {
 }
 
 .button {
+    display: inline-block;
     line-height: 17px;
     font-size: 17px;
     font-weight: normal;
@@ -51,6 +52,7 @@ a:hover {
 	border: 2px solid #E7E7E7;
     text-align: center;
     white-space: nowrap;
+    text-decoration: none;
     cursor: pointer;
 
     padding: 9px 11px;
