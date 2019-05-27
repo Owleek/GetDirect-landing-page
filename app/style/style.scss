@@ -343,6 +343,10 @@ body {
 		        span {
 			        word-break: break-all;
 		        }
+			}
+			
+			> input {
+		        width: 100%;
 		    }
 		}        
 
@@ -427,7 +431,13 @@ body {
 		    display: block;
 		    > span {
 		        width: auto;
-		    }
+			}
+
+			> input {
+				width: 100%;
+				font-size: 15px;
+			}
+			
 		    .button {
 		        width: 100%;
 		        display: block;

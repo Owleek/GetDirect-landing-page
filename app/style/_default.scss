@@ -278,15 +278,23 @@ main {
 
 .appKeyCtrl {
     display: flex;
-    > span {
+    > span, 
+    > input {
         width: 500px;
-        padding: 10px 20px 10px 20px;
+        padding: 10px;
         border: 1px solid #E7E7E7;
         background: #FAFAFA;
         
         display: flex;
         align-items: center;
+        display: none;
     }
+    > input {
+        display: flex;
+    }
+
+
+
     .button {
         border-left: 0;
         border-width: 1px;
