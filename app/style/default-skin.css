@@ -95,7 +95,8 @@
 /* no arrows on touch screens */
 .pswp--touch .pswp__button--arrow--left,
 .pswp--touch .pswp__button--arrow--right {
-  visibility: hidden; }
+  visibility: visible; 
+}
 
 /*
 	Arrow buttons hit area
