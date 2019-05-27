@@ -73,15 +73,19 @@ $(function(){
 
   function openGallery($gallery, index, items, pswpOptions){
     var $pswp = $(".pswp"),
-        owl = $gallery.data("owlCarousel"),
+        owl = $gallery.data("owl.carousel"),
         gallery;
-
     var options = $.extend(true, {
       index: index,
+      getThumbBoundsFn: function(index) {
+        var $thumbnail = $(items[index].el).find("img");
+        $gallery.find(".owl-item.active").each(function(i, item) {
+          if ($(items[index].el).attr("item-index") == $(item).find("a").attr("item-index")) {
+            $thumbnail = $(item).find("img");
+          }
+        });
+        var offset = $thumbnail.offset();
 
-      getThumbBoundsFn: function(index){
-        var $thumbnail = $(items[index].el).find("img"),
-            offset = $thumbnail.offset();
         return {
           x: offset.left,
           y: offset.top,
@@ -94,7 +98,7 @@ $(function(){
     gallery.init();
 
     gallery.listen("beforeChange", function(x){
-      owl.goTo(this.getCurrentIndex());
+      $gallery.trigger('to.owl.carousel', this.getCurrentIndex());
     });
 
     gallery.listen("close", function(){
@@ -115,6 +119,12 @@ $(function(){
           items = getGalleryItems($gallery),
           options = $.extend(true, {}, pswpOptions);
 
+      $gallery
+        .find(".item")
+        .each(function(index, item) {
+          $(item).find("a").attr("item-index", index);
+        });
+
       $gallery.owlCarousel(owlOptions);
 
       options.galleryUID = uid;
@@ -122,27 +132,34 @@ $(function(){
 
       $gallery.find(".owl-item").on("click", function(e){
         if( !$(e.target).is("img") ) return;
-
-        openGallery($gallery, $(this).index(), items.concat(), options);
+        var index = parseInt($(this).find("a").attr("item-index"));
+        openGallery($gallery, index, items.concat(), options);
         return false;
       });
     });
   }
 
   var owlOptions = {
-        itemsCustom: [
-        [0, 1],
-        [450, 2],
-        [1000, 3]
-      ],
-        responsiveRefreshRate: 0,
-        navigation: true
+    responsive: {
+      0: {
+        items:1
       },
-      pswpOptions = {
-        bgOpacity: 0.9,
-        history: false,
-        shareEl: false
-      };
+      480: {
+        items:2
+      },
+      1000: {
+        items:3
+      }
+    },
+    nav: true,
+    dots: false,
+    loop: true
+  },
+  pswpOptions = {
+    bgOpacity: 0.9,
+    history: false,
+    shareEl: false
+  };
 
   initializeGallery($(".owl-carousel"), owlOptions, pswpOptions);
 
