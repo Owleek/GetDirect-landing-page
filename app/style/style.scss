@@ -3,7 +3,7 @@
 @import "default";
 
 body {
-	background: #FAFAFA;
+	background: $backgroundColor;
 }
 
 header {
@@ -11,6 +11,7 @@ header {
 	color: #FFFFFF;
 	background: #2344A4;
 	padding: 0px 20px;
+
 	a {
 		color: #FFFFFF;
 	}
@@ -38,23 +39,15 @@ header {
 	font-size: 17px;
 }
 
-.profileComponent {
-	text-align: center;
-	.wrapper {
-		max-width: 280px;
-	}
-	span {
-		display: block;
-	}
-}
-
 .social {
 	font-size: 16px;
 	color: #0173C1;
 	margin: 16px 0px;
+
 	span {
 		display: inline-block;
 	}
+
 	a {
 		color: #0173C1;
 		margin-left: 8px;
@@ -68,16 +61,19 @@ header {
 
 .profile {
 	text-align: center;
+
 	.userPic {
 		margin: 0px -20px;
 		background: #F9F9F9;
-		border: 1px solid #E7E7E7;
+		border: 1px solid $borderColor;
 		border-width: 1px 0;
 	}
+
 	.userName {
 		font-size: 24px;
 		margin: 15px 0px 17px 0px;
-	}	
+	}
+
 	.userPosition {
 		display: inline-block;
 		padding: 10px 10px;
@@ -94,6 +90,7 @@ header {
 	border-radius: 5px;
 	background: #FFFFFF;
 	padding: 12px;
+
 	.value {
 		display: block;
 		margin-top: 12px;
@@ -105,8 +102,9 @@ header {
 .photogalleryModule {
 	margin-top: -20px;
 	padding: 20px 20px 1px;
-	background: #FAFAFA;
-	border-bottom: 1px solid #E7E7E7;
+	background: $backgroundColor;
+	border-bottom: 1px solid $borderColor;
+
 	.photoswipeGallery {
 		margin-bottom: 20px;
 	}
@@ -115,12 +113,15 @@ header {
 .oportunitiesContent {
 	display: flex;
 	font-size: 20px;
+
 	.icon {
 		padding-top: 20px;
 	}		
+
 	.text {
 		padding-left: 20px;
 	}
+
 	.button {
 		margin-right: 20px;
 	}
@@ -128,11 +129,12 @@ header {
 
 .title {
 	margin: 0px;
-	color: #555555;
+	color: $infrequentColor;
 	position: relative;
 	margin: 16px 20px 16px 20px; 
 	padding-left: 40px;
 	font-weight: normal;
+
 	.ico {
 		position: absolute;
 		left: 0;
@@ -143,6 +145,7 @@ header {
 .photoСarouselModule {
 	max-width: 940px;
 	margin: 0px auto;
+
 	.item {
 		margin: 0px 5px;
 		text-align: center;
@@ -163,126 +166,126 @@ header {
 	padding: 20px 20px 20px 20px;
 	background: rgba(255,209,133,0.25);
 	border-radius: 5px;
-	border: 1px solid #E7E7E7;
-}
+	border: 1px solid $borderColor;
 
-.commentBlock :last-child {
-	margin-bottom: 0;
-}
+	&:last-child {
+		margin-bottom: 0;
+	}
 
-.commentBlock p {
-	color: #555555;
+	p {
+		color: $infrequentColor;
+	}
 }
-
 
 .genSection {
-	border-top: 1px solid #E7E7E7;
+	border-top: 1px solid $borderColor;
+
 	.wrapper {
 		max-width: 715px;
 	}
 }
 
-.tabsComponent:after {
-	clear: both;
-	display: block;
-	content: '';
-}
-
 .tabsComponent {
 	margin: 20px 0;
-	border-bottom: 1px solid #E7E7E7;
-}
+	border-bottom: 1px solid $borderColor;
 
-.tabsComponent dt {
-    margin: 0px;
-	padding: 13px 50px 13px 25px;
-    margin: 0;
-	color: #000000;
-	position: relative;
-	font-size: 20px;
-	font-weight: normal;
-	border: 1px solid #E7E7E7;
-	border-bottom: none;
-    background: #FAFAFA;
-    cursor: pointer;
-}
+	&:after {
+		clear: both;
+		display: block;
+		content: '';
+	}
 
-.tabsComponent dt:before {
-	width: 32px;
-	height: 32px;
-	position: absolute;
-	right: 10px; top: 50%;
-	transform: translate(0%, -50%);
-	background: url('../images/accordion-arrow.svg') no-repeat 50% 50%;
-	content: '';
-}
+	dt {
+		margin: 0px;
+		padding: 13px 50px 13px 25px;
+		margin: 0;
+		color: #000000;
+		position: relative;
+		font-size: 20px;
+		font-weight: normal;
+		border: 1px solid $borderColor;
+		border-bottom: none;
+		background: $backgroundColor;
+		cursor: pointer;
 
-.tabsComponent dt:hover {
-	color: #000;
-}
+		&:before {
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			right: 10px; top: 50%;
+			transform: translate(0%, -50%);
+			background: url('../images/accordion-arrow.svg') no-repeat 50% 50%;
+			content: '';
+		}
 
-.tabsComponent dd {
-	display: none;
-	border: 1px solid #E7E7E7;
-	border-bottom: none;
-	padding: 20px 20px 20px 20px;
-	margin: 0;
-}
+		&:hover {
+			color: #000;
+		}
 
-.tabsComponent dt.active {
-	
-	border-bottom: 0px;
-	/*background: #ffffff;*/
-	/*color: #000;*/
-}
+		&.active {
+			border-bottom: 0px;
 
-.tabsComponent dt.active:before {
-	transform: translate(0%, -50%) rotate(180deg);
-}
+			&:before {
+				transform: translate(0%, -50%) rotate(180deg);
+			}
+		}
+	}
 
-.tabsComponent dd.active {
-	display: block;
+	dd {
+		display: none;
+		border: 1px solid $borderColor;
+		border-bottom: none;
+		padding: 20px 20px 20px 20px;
+		margin: 0;
+
+		&.active {
+			display: block;
+		}
+	}
 }
 
 .photoswipeGallery {
 	display: flex;
-}
 
-.photoswipeGallery figure {
-	margin: 0px 20px 0px 0px;
-}
+	figure {
+		margin: 0px 20px 0px 0px;
 
-.photoswipeGallery figure:last-child {
-	margin: 0px;
-}
+		&:last-child {
+			margin: 0px;
+		}
+	}
 
-.photoswipeGallery figcaption {
-	display: none;
+	figcaption {
+		display: none;
+	}
 }
 
 footer {
 	padding: 20px 0px 20px;
-	background: #555555;
+	background: $infrequentColor;
 	text-align: center;
 	font-size: 17px;
 	color: #FFFFFF;
+
 	a {
 		color: #FFFFFF;
 	}
-}
 
-footer p:last-of-type {
-	margin-bottom: 0px;
+	p {
+		&:last-of-type {
+			margin-bottom: 0px;
+		}
+	}
 }
 
 .copyrights {
 	display: block;
 	text-align: center;
 	padding: 0px 0px 10px 0px;
-}
-
-.copyrights li {
-	margin: 0px 0px 12px 0px;
+	
+	li {
+		margin: 0px 0px 12px 0px;
+	}
 }
 
 body {
@@ -303,65 +306,59 @@ body {
     @include respond(small) {
 
 
-    	.headerMenu a {
-    		width: 32px;
-    		height: 32px;
-    		display: block;
-    		position: relative;
-    		text-indent: -1000px;
-    	}    	
+		.headerMenu { 
+			a {
+				width: 32px;
+				height: 32px;
+				display: block;
+				position: relative;
+				text-indent: -1000px;
 
-    	.headerMenu a:before {
-    		width: 32px;
-    		height: 32px;
-    		position: absolute;
-    		right: 0;
-    		top: 0;
-    		background: url('../images/menu.svg') no-repeat 50% 50%;
-    		content: '';
-    	}
+				&:before {
+					width: 32px;
+					height: 32px;
+					position: absolute;
+					right: 0;
+					top: 0;
+					background: url('../images/menu.svg') no-repeat 50% 50%;
+					content: '';
+				}
+			}    	
+		}
 
         .commentsList {
         	margin: 0;
-        	flex-wrap: wrap;
+			flex-wrap: wrap;
+			
         	.commentBlock {
         		margin-left: 0;
         	}
         }
 
         .wizard .textBlock {
-        	flex-wrap: wrap;
+			flex-wrap: wrap;
+			
 			.image {
+				flex-shrink: 1;
 				margin: 0 0 20px 0;
 			}
-        }
+		}
 
 		.appKeyCtrl {
 		    display: flex;
-		    > span {
-		        width: auto;
-		        span {
-			        word-break: break-all;
-		        }
-			}
 			
-			> input {
+			textarea {
 		        width: 100%;
 		    }
 		}        
 
-		.wizard .textBlock {
-		    .image {
-		        flex-shrink: 1;
-		        margin: 0 0 20px 0;
-		    }
-		}
 
 		.highlight {
 			display: block;
+
 			.image {
 				margin: 0 -20px 20px -20px;
-				background: #FAFAFA;
+				background: $backgroundColor;
 				text-align: center;
 			}
 		}
@@ -369,6 +366,7 @@ body {
 		.attachments {
 			.photoswipeGallery {
 				display: block;
+
 				figure {
 					display: inline-block;
 					margin: 0 20px 20px 0;
@@ -403,12 +401,15 @@ body {
 
 		.oportunitiesContent {
 			display: block;
+
 			.icon {
 				text-align: center;
 			}		
+
 			.text {
 				padding-left: 0;
 			}
+
 			.button {
 				margin-right: 20px;
 			}
@@ -428,21 +429,13 @@ body {
 		}		
 
 		.appKeyCtrl {
-		    display: block;
-		    > span {
-		        width: auto;
-			}
-
-			> input {
-				width: 100%;
-				font-size: 15px;
-			}
+			display: block;
 			
 		    .button {
 		        width: 100%;
 		        display: block;
 		        border-radius: 0;
-		        border: 1px solid #E7E7E7;
+		        border: 1px solid $borderColor;
 		        border-top: 0px;
 		    }
 		}
@@ -452,6 +445,7 @@ body {
 			.photoswipeGallery {
 				display: block;
 				text-align: center;
+				
 				figure {
 					display: block;
 					margin: 0 0px 20px 0;
@@ -475,6 +469,5 @@ body {
 		.tabsComponent {
 			margin: 20px -21px;
 		}
-
     }
 }
